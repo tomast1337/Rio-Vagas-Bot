@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <script type="text/javascript" src="./eel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript">
+        function criarPerfil() {
+            var Perfil = document.getElementById("Nperfil").value;
+            var nome = document.getElementById("Nome").value;
+            var email = document.getElementById("Email").value;
+            var celular = document.getElementById("Celular").value;
+            var telefone = document.getElementById("Telefone").value;
+            var pretencao = document.getElementById("Pretencao").value;
+            var Curriculo = document.getElementById("Curriculo").value;
+            var CurriculoTexto = document.getElementById("CurriculoE").value;
+            var Carta = document.getElementById("Carta").value;
+            alert(Perfil, nome, email, celular, telefone, pretencao, Curriculo, CurriculoTexto, Carta);
+            eel.criarPerfil(Perfil, nome, email, celular, telefone, pretencao, Curriculo, CurriculoTexto, Carta)(function(ret) {
+                console.log(ret)
+            })
+        }
+        async function getFolder() {
+            var arquivo = await eel.SelecionarCurriculo()();
+            if (arquivo) {
+                console.log(arquivo);
+                document.getElementById("Curriculo").value = arquivo
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="colum">
+        <h2>Criar perfil</h2>
+        <button onclick="location.reload()">Atualizar</button>
+    </div>
+    <div class="colum">
+        <h2>Criar perfil</h2>
+        <form>
+            <div class="primeiro">
+                <input id="Nperfil" placeholder="Nome perfil" type="text"></br>
+                <input id="Nome" placeholder="Nome" type="text"></br>
+                <input id="Email" placeholder="Email" type="email"></br>
+                <input id="Celular" placeholder="Celular" type="tel"></br>
+                <input id="Telefone" placeholder="Telefone" type="tel"></br>
+                <input id="Pesquisa" placeholder="Pesquisa" type="text"></br>
+                <input id="Pretencao" placeholder="pretensão" type="text"></br>
+
+                <label>Carta</label></br>
+                <textarea id="Carta"> </textarea></br>
+                <label>Curriculo</label></br>
+                <a onclick="getFolder()">selecionar curriculo</a>
+                <input id="Curriculo" type="hidden"></br>
+                <label>Curriculo email</label></br>
+                <textarea id="CurriculoE"> </textarea></br>
+                <button onclick="criarPerfil()">Criar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+</html>
