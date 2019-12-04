@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Roboto|Roboto+Mono|Sulphur+Point&display=swap');
+html {
+    margin: 0px 0px 0px 0px;
+    font-size: 100%;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.colum {
+    margin: auto;
+    float: left;
+    width: 50vw;
+    height: 100vh;
+    form {
+        height: 90%;
+        margin: auto;
+        width: 90%;
+        * {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        a {
+            padding: 5px;
+            height: 30px;
+            transition-duration: 1s;
+            margin-top: 5px;
+            width: 90%;
+            border: 1px solid black;
+            font-family: 'Sulphur Point', sans-serif;
+            font-size: 20px;
+        }
+        a:hover {
+            height: 35px;
+            background-color: black;
+            color: white;
+            transition-duration: 1s;
+            border-radius: 5px;
+        }
+        border: 1px solid black;
+        .primeiro {
+            text-align: center
+        }
+    }
+    input {
+        padding: 5px;
+        height: 30px;
+        transition-duration: 1s;
+        margin-top: 5px;
+        width: 90%;
+        border: 1px solid black;
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 20px;
+    }
+    input:hover {
+        height: 35px;
+        background-color: black;
+        color: white;
+        transition-duration: 1s;
+        border-radius: 5px;
+    }
+    button {
+        padding: 5px;
+        height: 40px;
+        transition-duration: 1s;
+        margin-top: 5px;
+        width: 90%;
+        border: 1px solid black;
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 30px;
+    }
+    button:hover {
+        height: 45px;
+        background-color: black;
+        color: white;
+        transition-duration: 1s;
+        border-radius: 15px;
+    }
+    textarea {
+        border: 1px solid black;
+        width: 90%;
+        height: 150px;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+    textarea:hover {
+        height: 200px;
+        background-color: black;
+        color: white;
+        transition-duration: 1s;
+        border-radius: 10px;
+    }
+}

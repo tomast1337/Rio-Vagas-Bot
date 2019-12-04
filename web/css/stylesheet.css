@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Roboto|Roboto+Mono|Sulphur+Point&display=swap");
+html {
+  margin: 0px 0px 0px 0px;
+  font-size: 100%;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+.colum {
+  margin: auto;
+  float: left;
+  width: 50vw;
+  height: 100vh;
+}
+.colum form {
+  height: 90%;
+  margin: auto;
+  width: 90%;
+  border: 1px solid black;
+}
+.colum form * {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.colum form a {
+  padding: 5px;
+  height: 30px;
+  transition-duration: 1s;
+  margin-top: 5px;
+  width: 90%;
+  border: 1px solid black;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 20px;
+}
+.colum form a:hover {
+  height: 35px;
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+  border-radius: 5px;
+}
+.colum form .primeiro {
+  text-align: center;
+}
+.colum input {
+  padding: 5px;
+  height: 30px;
+  transition-duration: 1s;
+  margin-top: 5px;
+  width: 90%;
+  border: 1px solid black;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 20px;
+}
+.colum input:hover {
+  height: 35px;
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+  border-radius: 5px;
+}
+.colum button {
+  padding: 5px;
+  height: 40px;
+  transition-duration: 1s;
+  margin-top: 5px;
+  width: 90%;
+  border: 1px solid black;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 30px;
+}
+.colum button:hover {
+  height: 45px;
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+  border-radius: 15px;
+}
+.colum textarea {
+  border: 1px solid black;
+  width: 90%;
+  height: 150px;
+  font-family: "Sulphur Point", sans-serif;
+}
+.colum textarea:hover {
+  height: 200px;
+  background-color: black;
+  color: white;
+  transition-duration: 1s;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
