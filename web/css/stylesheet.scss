@@ -21,78 +21,85 @@ h2 {
     float: left;
     width: 50vw;
     height: 100vh;
+    label {
+        font-family: 'Roboto';
+        size: 120%;
+    }
     form {
         height: 90%;
         margin: auto;
         width: 90%;
+        border: 1px solid black;
         * {
             margin-top: 1px;
             margin-bottom: 1px;
         }
         a {
+            margin: 5px;
             padding: 5px;
-            height: 30px;
+            height: 40px;
             transition-duration: 1s;
             margin-top: 5px;
-            width: 90%;
+            width: 80%;
             border: 1px solid black;
             font-family: 'Sulphur Point', sans-serif;
-            font-size: 20px;
+            font-size: 30px;
         }
         a:hover {
-            height: 35px;
+            box-shadow: 0px 0px 69px -2px rgba(0, 0, 0, 0.75);
+            height: 50px;
+            width: 60%;
+            font-size: 35px;
             background-color: black;
             color: white;
             transition-duration: 1s;
-            border-radius: 5px;
+            border-radius: 25px;
         }
-        border: 1px solid black;
+        .radioPerfil {
+            border: 1px solid black;
+            margin: 10px;
+            text-align: center;
+            font-family: 'Sulphur Point', sans-serif;
+            font-size: 22px;
+        }
         .primeiro {
             text-align: center
         }
     }
-    input {
+    input[type=text],
+    input[type=tel],
+    input[type=email] {
         padding: 5px;
         height: 30px;
         transition-duration: 1s;
         margin-top: 5px;
-        width: 90%;
+        width: 80%;
         border: 1px solid black;
         font-family: 'Sulphur Point', sans-serif;
         font-size: 20px;
     }
-    input:hover {
+    input[type=text]:hover,
+    input[type=tel]:hover,
+    input[type=email]:hover {
+        box-shadow: 0px 0px 69px -2px rgba(0, 0, 0, 0.75);
         height: 35px;
+        width: 90%;
         background-color: black;
         color: white;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
         border-radius: 5px;
     }
-    button {
-        padding: 5px;
-        height: 40px;
-        transition-duration: 1s;
-        margin-top: 5px;
-        width: 90%;
-        border: 1px solid black;
-        font-family: 'Sulphur Point', sans-serif;
-        font-size: 30px;
-    }
-    button:hover {
-        height: 45px;
-        background-color: black;
-        color: white;
-        transition-duration: 1s;
-        border-radius: 15px;
-    }
     textarea {
+        transition-duration: 1s;
         border: 1px solid black;
-        width: 90%;
+        width: 80%;
         height: 150px;
         font-family: 'Sulphur Point', sans-serif;
     }
     textarea:hover {
+        box-shadow: 0px 0px 69px -2px rgba(0, 0, 0, 0.75);
         height: 200px;
+        width: 90%;
         background-color: black;
         color: white;
         transition-duration: 1s;

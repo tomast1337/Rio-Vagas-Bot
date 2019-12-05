@@ -22,6 +22,10 @@ h2 {
   width: 50vw;
   height: 100vh;
 }
+.colum label {
+  font-family: "Roboto";
+  size: 120%;
+}
 .colum form {
   height: 90%;
   margin: auto;
@@ -33,67 +37,70 @@ h2 {
   margin-bottom: 1px;
 }
 .colum form a {
-  padding: 5px;
-  height: 30px;
-  transition-duration: 1s;
-  margin-top: 5px;
-  width: 90%;
-  border: 1px solid black;
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 20px;
-}
-.colum form a:hover {
-  height: 35px;
-  background-color: black;
-  color: white;
-  transition-duration: 1s;
-  border-radius: 5px;
-}
-.colum form .primeiro {
-  text-align: center;
-}
-.colum input {
-  padding: 5px;
-  height: 30px;
-  transition-duration: 1s;
-  margin-top: 5px;
-  width: 90%;
-  border: 1px solid black;
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 20px;
-}
-.colum input:hover {
-  height: 35px;
-  background-color: black;
-  color: white;
-  transition-duration: 1s;
-  border-radius: 5px;
-}
-.colum button {
+  margin: 5px;
   padding: 5px;
   height: 40px;
   transition-duration: 1s;
   margin-top: 5px;
-  width: 90%;
+  width: 80%;
   border: 1px solid black;
   font-family: "Sulphur Point", sans-serif;
   font-size: 30px;
 }
-.colum button:hover {
-  height: 45px;
+.colum form a:hover {
+  box-shadow: 0px 0px 69px -2px rgba(0, 0, 0, 0.75);
+  height: 50px;
+  width: 60%;
+  font-size: 35px;
   background-color: black;
   color: white;
   transition-duration: 1s;
-  border-radius: 15px;
+  border-radius: 25px;
+}
+.colum form .radioPerfil {
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 22px;
+}
+.colum form .primeiro {
+  text-align: center;
+}
+.colum input[type=text],
+.colum input[type=tel],
+.colum input[type=email] {
+  padding: 5px;
+  height: 30px;
+  transition-duration: 1s;
+  margin-top: 5px;
+  width: 80%;
+  border: 1px solid black;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 20px;
+}
+.colum input[type=text]:hover,
+.colum input[type=tel]:hover,
+.colum input[type=email]:hover {
+  box-shadow: 0px 0px 69px -2px rgba(0, 0, 0, 0.75);
+  height: 35px;
+  width: 90%;
+  background-color: black;
+  color: white;
+  transition-duration: 0.5s;
+  border-radius: 5px;
 }
 .colum textarea {
+  transition-duration: 1s;
   border: 1px solid black;
-  width: 90%;
+  width: 80%;
   height: 150px;
   font-family: "Sulphur Point", sans-serif;
 }
 .colum textarea:hover {
+  box-shadow: 0px 0px 69px -2px rgba(0, 0, 0, 0.75);
   height: 200px;
+  width: 90%;
   background-color: black;
   color: white;
   transition-duration: 1s;
