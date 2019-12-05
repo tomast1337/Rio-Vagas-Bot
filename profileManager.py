@@ -42,17 +42,11 @@ def apagarPerfil(Perfil):
         return True
 def CriarJson(Perfil,nome,email,celular,telefone,pretencao,Pesquisa):
     p = ((osPath.replace("\\","/").replace(name,"") + "profiles/" + Perfil))
-    data = {"Nome": nome,
-            "Email": email,
-            "Celular": celular,
-            "Telefone": telefone,
-            "Pretensao": int(pretencao),
-            "Pesquisa":Pesquisa
-           }
+    data = {"PNome": Perfil,"Nome": nome,"Email": email,"Celular": celular,
+            "Telefone": telefone,"Pretensao": int(pretencao),"Pesquisa":Pesquisa}
     f = open(p+"/config.json","w")
     f.write(json.dumps(data, indent=4))
     f.close()
-    pass
 if __name__ == "__main__":
     print(criarPerfil("Perfil","nome","email","celular","telefone",99800,"Pesquisa","T:\Rio-Vagas-Bot\Curriculo Leticia - Documentos Google.pdf","CurriculoTexto","Carta"))
     input("Entre para apagar perfil de teste")
