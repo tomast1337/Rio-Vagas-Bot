@@ -48,13 +48,10 @@ def realizarB(NomeP):
 def realizarE(NomeP):
     Dados = dadosPerfil(NomeP)
     eviar(Dados['Pesquisa'],Dados)
-realizarE("Nicolas dev")
 
 @eel.expose
 def realizarEB(NomeP):
     realizarB(NomeP)
     realizarE(NomeP)
     
-realizarE("Nicolas dev")
-
 eel.start('index.html',size = (900,900),)
