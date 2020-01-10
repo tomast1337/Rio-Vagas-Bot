@@ -4,7 +4,7 @@ import json
 name = "profileManager.py"
 osPath = os.path.realpath(__file__)
 relativePath = "\python\profileManager.py" 
-def criarPerfil(Perfil,nome,email,celular,telefone,pretencao,Pesquisa,Curriculo,CurriculoTexto,Carta): #Implementado cria uma nova pasta com o nome do perfil
+def criarPerfil(Perfil,nome,email,celular,telefone,pretencao,Pesquisa,Curriculo,CurriculoTexto,Carta):
     #print(Perfil,nome,email,celular,telefone,pretencao,Pesquisa,Curriculo,CurriculoTexto,Carta)
     Curriculo = Curriculo.replace('\\','/')
     p = ((osPath.replace("\\","/").replace(name,"").replace("python/","")) + "profiles/default")
@@ -13,11 +13,13 @@ def criarPerfil(Perfil,nome,email,celular,telefone,pretencao,Pesquisa,Curriculo,
         shutil.copytree(p,dst_dir)
     except IOError as e:
         print(e)
+        print("Erro ao copiar Pasta Default")
         return False
     try:
         shutil.copy2(Curriculo, dst_dir+"/Curiculo.pdf")
     except IOError as e:
         print(e)
+        print("Erro ao copiar Curriculo")
         return False
     else:
         CriarJson(Perfil,nome,email,celular,telefone,pretencao,Pesquisa)

@@ -13,7 +13,7 @@ function enviar() {
 
 function buscarEnviar() {
     var pesquisa = document.querySelector('input[name="perfis"]:checked').value;
-    eel.realizarBE(pesquisa)();
+    eel.realizarEB(pesquisa)();
 }
 
 function criarPerfil() {
@@ -26,8 +26,9 @@ function criarPerfil() {
     var Curriculo = document.getElementById("Curriculo").value;
     var CurriculoTexto = document.getElementById("CurriculoE").value;
     var Carta = document.getElementById("Carta").value;
-    var pesquisa = document.getElementById("Carta").value;
+    var pesquisa = document.getElementById("Pesquisa").value;
     var saida;
+    //criarP(NomeP,  Nome, Email, celular, telefone, pretensao, pesquisa, carta, curriculo, curriculoT):
     eel.criarP(Perfil, nome, email, celular, telefone, pretencao, pesquisa, Carta, Curriculo, CurriculoTexto, )(function(ret) {
         saida = ret;
     });

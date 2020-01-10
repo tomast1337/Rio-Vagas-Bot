@@ -57,7 +57,7 @@ def Pesquisar(vaga):
         print("Abrindo "+vaga+".db")
         conn = sqlite3.connect((osPath.replace("\\","/").replace(name,"").replace("python/","")) + "vagas/" + vaga+".db")
         c = conn.cursor()
-        conn.execute('CREATE TABLE IF NOT EXISTS '+vaga+' (Link text PRIMARY KEY)')
+        conn.execute('CREATE TABLE IF NOT EXISTS '+"'"+vaga+"'"+' (Link text PRIMARY KEY)')
         for elem in elems:
             links = []
             link = str(elem.get_attribute("href"))
@@ -65,7 +65,7 @@ def Pesquisar(vaga):
                 total = total + 1
                 links.append(elem.get_attribute("href"))
             for url in links:
-                c.execute('INSERT OR REPLACE INTO '+vaga+'(Link) VALUES ("'+url+'")')
+                c.execute('INSERT OR REPLACE INTO '+"'"+vaga+"'"+'(Link) VALUES ("'+url+'")')
                 conn.commit()
                 print("Vaga "+link+" adicionada ao Banco de dados")
         conn.close()
@@ -79,7 +79,7 @@ def eviar(vaga,perfil):
     print("Abrindo "+vaga+".db")
     conn = sqlite3.connect((osPath.replace("\\","/").replace(name,"")) + "vagas/" + vaga+".db")
     c = conn.cursor()
-    vagas = c.execute("SELECT Link FROM "+vaga).fetchall()
+    vagas = c.execute("SELECT Link FROM "+"'"+vaga+"'").fetchall()
     driver = criarDriver()
     url = "https://riovagas.com.br/page/"+str(1)+"/?s="+vaga
     driver.get(url)
