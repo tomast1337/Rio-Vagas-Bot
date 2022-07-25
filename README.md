@@ -8,4 +8,3 @@
 - Selenium Webdriver
 - ChromeDriver
 ## sobre
-Foi muito divertido e um sonho de prequisoso programar esse bot para enviar curriculos
